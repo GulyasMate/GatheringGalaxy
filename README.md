@@ -26,10 +26,7 @@ A GatheringGalaxy célja, hogy társasági élményeket nyújtson olyan emberek 
 
 A GatheringGalaxy használatához [itt regisztrálhatsz](#), vagy [itt jelentkezhetsz be](#), ha már van fiókod.
 
----
-
-### Licenc
+## Licenc
 
 Ez a projekt MIT licenc alatt érhető el.
 
----
