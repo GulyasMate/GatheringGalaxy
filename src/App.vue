@@ -14,10 +14,6 @@ const items = [
   { id: 2, title: 'Lol meccs', date: null, image: '' },
   { id: 3, title: 'Valami', date: null, image: '' },
 ];
-
-const showDetails = (id) => {
-  console.log('Részletek:', id);
-};
 </script>
 
 <template>
