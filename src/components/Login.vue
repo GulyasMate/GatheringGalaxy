@@ -1,20 +1,21 @@
 <script setup>
+
+
 </script>
 
 <template>
   <div class="container-center">
-    <header>
-    </header>
     <div class="card p-4 shadow-lg">
+      <h2 class="text-center">Belépés</h2>
       <form>
         <div class="mb-3">
-          <input type="email" class="form-control bg-dark text-white" id="bejemail" placeholder="Email cím megadása" />
+          <input type="email" class="form-control bg-dark text-white" id="loginEmail" placeholder="Email cím megadása" />
         </div>
         <div class="mb-3">
-          <input type="password" class="form-control bg-dark text-white" id="bejpass" placeholder="Jelszó megadása" />
+          <input type="password" class="form-control bg-dark text-white" id="loginPassword" placeholder="Jelszó megadása" />
         </div>
         <div class="form-check mb-3">
-          <input class="form-check-input" type="checkbox" id="notrobot" />
+          <input class="form-check-input checkbox" type="checkbox" id="notrobot" />
           <label class="form-check-label text-white" for="notrobot">Nem vagyok robot</label>
         </div>
         <button type="submit" class="btn btn-primary w-100">Bejelentkezés</button>
@@ -24,11 +25,16 @@
 </template>
 
 <style scoped>
-form {
+form, .container-center{
   display: flex;
   flex-direction: column;
-  gap: 10px;
   align-items: center;
+}
+.checkbox {
+  padding: 0px;
+}
+form {
+  gap: 10px;
 }
 
 .card {
@@ -39,10 +45,7 @@ form {
 }
 
 .container-center {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100vh;
   background-size: cover;
   background-position: center;

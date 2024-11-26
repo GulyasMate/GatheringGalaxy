@@ -30,8 +30,8 @@ const items = [
     </header>
     <main>
       <div v-if="currentView === 'home'">
-        <button @click="setView('login')">Login</button>
-        <button @click="setView('registration')">Register</button>
+        <button @click="setView('login')">Bejelentkezés</button>
+        <button @click="setView('registration')">Regisztráció</button>
       </div>
       <div v-if="currentView === 'login'">
         <Login />
@@ -65,7 +65,6 @@ const items = [
   flex-direction: column;
   min-height: 100vh;
 }
-
 main {
   flex: 1; 
 }

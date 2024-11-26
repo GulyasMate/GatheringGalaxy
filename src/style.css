@@ -5,10 +5,6 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-image: url("/src/assets/bck.webp");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -17,51 +13,57 @@
 
 
 }
+body{
+  background-image: url(/src/assets/bck.webp);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #DFD1EB !important;
+}
+main{
+  padding: 30px;
+}
+header, input, button, a, footer, h2 {
+  color: #DFD1EB !important;
+}
 
 header {
   background-color: #44165A;
-  color: #DFD1EB;
-  margin: -10px;
-  filter: drop-shadow(0, 4, 4, black)
+  filter: drop-shadow(0, 4, 4, black);
+  padding: 10px !important;
+}
+input:focus, button:hover {
+  background-color: #DFD1EB;
+}
+input, button, button:hover {
+  padding: 10px 20px;
+  margin-top: 20px;
+}
+button:hover, button{
+  border-radius: 6px !important;
 }
 
 input {
   border-radius: 20px;
-  margin-top: 20px;
-  padding: 10px 20px;
   background-color: #B39BCD;
-  color: #DFD1EB;
 }
 
 input:focus {
-  background-color: #DFD1EB;
   color: #B39BCD;
 }
 
-button {
-  border-radius: 6px;
+button, footer {
   background-color: #5E3674;
-  color: #DFD1EB;
-  margin-top: 20px;
-  padding: 10px 20px;
 }
 
-button:hover {
-  border-radius: 6px;
-  background-color: #DFD1EB;
-  color: #5E3674;
-  margin-top: 20px;
-  padding: 10px 20px;
+button:hover, a:hover {
+  color: #5E3674 !important;
 }
 
 a {
   text-decoration: none;
-  color: #DFD1EB;
 }
 
-a:hover {
-  color: #5E3674;
-}
 
 form {
   background-color: #1E3768;
@@ -69,9 +71,6 @@ form {
 }
 
 footer {
-  background-color: #5F207D;
-  color: #DFD1EB;
-  margin: -10px;
   filter: drop-shadow(0, 4, 4, black);
   text-align: center;
 }
