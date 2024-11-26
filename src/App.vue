@@ -17,22 +17,22 @@ const items = [
 </script>
 
 <template>
-  <div class="app-container">
-    <header>
-      <img 
-        src="/src/assets/result.png" 
-        alt="GatheringGalaxy" 
-        title="Gathering Galaxy"
-        @click="setView('home')" 
-        style="cursor: pointer;"
-      >
-      <h1>GatheringGalaxy</h1>
-    </header>
-    <main>
-      <div v-if="currentView === 'home'">
-        <button @click="setView('login')">Bejelentkezés</button>
-        <button @click="setView('registration')">Regisztráció</button>
+  <header class="w-100">
+    <nav class="navbar">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#" @click="setView('home')">
+          <img src="\src\assets\result.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+          GratheringGalaxy
+        </a>
+        <div v-if="currentView === 'home'">
+          <button @click="setView('login')">Bejelentkezés</button>
+          <button @click="setView('registration')">Regisztráció</button>
+        </div>
       </div>
+    </nav>
+  </header>
+  <main class="h-100">
+    <div class="container">
       <div v-if="currentView === 'login'">
         <Login />
       </div>
@@ -53,19 +53,24 @@ const items = [
           </div>
         </div>
       </div>
-    </main>
-    <footer>
-      <p>Copyright &copy;</p>
-    </footer>
-  </div>
+    </div>
+  </main>
+  <footer>
+    <p>Copyright &copy;</p>
+  </footer>
 </template>
 <style>
-.app-container {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+.navbar-brand:hover,
+.navbar-brand {
+  color: #DFD1EB;
 }
-main {
-  flex: 1; 
+
+header {
+  position: fixed;
+}
+
+button,
+button:hover {
+  margin: 0px 10px;
 }
 </style>
