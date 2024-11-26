@@ -55,7 +55,7 @@ const items = [
       </div>
     </main>
     <footer>
-      <p>Copyright</p>
+      <p>Copyright &copy;</p>
     </footer>
   </div>
 </template>
