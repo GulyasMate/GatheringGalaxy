@@ -2,21 +2,19 @@
 </script>
 <template>
   <div class="container-center">
-    <header>
-    </header>
     <div class="card p-4 shadow-lg">
       <form>
         <div class="mb-3">
-          <input type="email" class="form-control bg-dark text-white" id="bename" placeholder="Felhasználói név létrehozása'" />
+          <input type="email" class="form-control bg-dark text-white" id="regisztrationName" placeholder="Felhasználói név létrehozása" />
         </div>
         <div class="mb-3">
-          <input type="email" class="form-control bg-dark text-white" id="bejemail" placeholder="Email cím megadása" />
+          <input type="email" class="form-control bg-dark text-white" id="regisztrationEmail" placeholder="Email cím megadása" />
         </div>
         <div class="mb-3">
-          <input type="password" class="form-control bg-dark text-white" id="bejpass" placeholder="Jelszó megadása" />
+          <input type="password" class="form-control bg-dark text-white" id="regisztrationPassword" placeholder="Jelszó megadása" />
         </div>
         <div class="mb-3">
-          <input type="password" class="form-control bg-dark text-white" id="bejpassujra" placeholder="Jelszó ismétlése" />
+          <input type="password" class="form-control bg-dark text-white" id="regisztrationPasswordAgain" placeholder="Jelszó ismétlése" />
         </div>
         <div class="form-check mb-3">
           <input class="form-check-input" type="checkbox" id="notrobot" />
@@ -29,11 +27,13 @@
 </template>
 
 <style scoped>
-form {
+form, .container-center{
   display: flex;
   flex-direction: column;
-  gap: 10px;
   align-items: center;
+}
+form {
+  gap: 10px;
 }
 
 .card {
@@ -44,10 +44,7 @@ form {
 }
 
 .container-center {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
-  align-items: center;
   height: 100vh;
   background-size: cover;
   background-position: center;
