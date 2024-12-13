@@ -1,5 +1,10 @@
 <script setup>
+//bootstrap
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+//functions
 import { ref } from 'vue';
+//components
 import Registration from './components/Registration.vue';
 import Login from './components/Login.vue';
 
@@ -31,7 +36,7 @@ const items = [
       </div>
     </nav>
   </header>
-  <main class="h-100">
+  <main>
     <div class="container">
       <div v-if="currentView === 'login'">
         <Login />
@@ -55,7 +60,7 @@ const items = [
       </div>
     </div>
   </main>
-  <footer>
+  <footer class="position-absolute bottom-0 end-0 w-100">
     <p>Copyright &copy;</p>
   </footer>
 </template>
@@ -64,11 +69,6 @@ const items = [
 .navbar-brand {
   color: #DFD1EB;
 }
-
-header {
-  position: fixed;
-}
-
 button,
 button:hover {
   margin: 0px 10px;
