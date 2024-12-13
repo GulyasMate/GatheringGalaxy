@@ -3,7 +3,8 @@
 <template>
   <div class="container-center">
     <div class="card p-4 shadow-lg">
-      <form>
+      <h2 class="text-center">Belépés</h2>
+      <form class="p-5">
         <div class="mb-3">
           <input type="email" class="form-control bg-dark text-white" id="regisztrationName" placeholder="Felhasználói név létrehozása" />
         </div>
@@ -42,11 +43,13 @@ form {
   background-color: #1e1e2f;
   border-radius: 15px;
 }
-
 .container-center {
   justify-content: center;
   height: 100vh;
   background-size: cover;
   background-position: center;
+}
+::placeholder{
+  color: #fff;
 }
 </style>

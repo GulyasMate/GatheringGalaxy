@@ -14,10 +14,14 @@ const setView = (view) => {
   currentView.value = view;
 };
 
+const getImgFromURL = (url) => {
+  return new URL(url, import.meta.url).href;
+}
+
 const items = [
-  { id: 1, title: 'Házi buli', date: null, image: '' },
-  { id: 2, title: 'Lol meccs', date: null, image: '' },
-  { id: 3, title: 'Valami', date: null, image: '' },
+  { id: 1, title: 'Házi buli', date: null, image: './assets/dummy.png' },
+  { id: 2, title: 'Lol meccs', date: null, image: './assets/dummy.png' },
+  { id: 3, title: 'Valami', date: null, image: './assets/dummy.png' },
 ];
 </script>
 
@@ -47,11 +51,11 @@ const items = [
       <div v-if="currentView === 'home'" class="item-list">
         <div v-for="item in items" :key="item.id" class="list-item">
           <div class="image-container">
-            <img :src="item.image" alt="Kép helye">
+            <img :src="getImgFromURL(item.image)" alt="Kép helye">
           </div>
           <div class="content">
             <h3>{{ item.title }}</h3>
-            <p>Időpont: {{ item.date || '-------------' }}</p>
+            <p class="pb-2">Időpont: {{ item.date || '-------------' }}</p>
           </div>
           <div class="action">
             <button @click="showDetails(item.id)">Részletek</button>
@@ -60,7 +64,7 @@ const items = [
       </div>
     </div>
   </main>
-  <footer class="position-absolute bottom-0 end-0 w-100">
+  <footer>
     <p>Copyright &copy;</p>
   </footer>
 </template>
@@ -72,5 +76,19 @@ const items = [
 button,
 button:hover {
   margin: 0px 10px;
+}
+img {
+  width: 100px;
+  border-radius: 50%;
+}
+.list-item{
+  margin-bottom: 10px;
+  background-color: #1e1e2f;
+  padding: 10px 20px;
+  border-radius: 10px;
+  color: #DFD1EB;
+}
+p{
+  margin-bottom: 0;
 }
 </style>

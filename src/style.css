@@ -2,17 +2,18 @@
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
 }
 body{
-  background-image: url(/src/assets/bck.webp);
-  background-repeat: no-repeat;
+  background-image: url(/src/assets/bg.webp);
+  background-repeat:repeat;
   background-attachment: fixed;
   background-size: cover;
-  color: #DFD1EB !important;
 }
 main{
   padding: 30px;
+}
+.form-check-input{
+  padding: 1px;
 }
 header, input, button, a, footer, h2 {
   color: #DFD1EB !important;
@@ -38,7 +39,6 @@ input {
   border-radius: 20px;
   background-color: #B39BCD;
 }
-
 input:focus {
   color: #B39BCD;
 }
@@ -50,12 +50,12 @@ button, footer {
 button:hover {
   color: #5E3674 !important;
 }
-
+.btn:hover{
+  padding: 6px;
+}
 a {
   text-decoration: none;
 }
-
-
 form {
   background-color: #1E3768;
   border-radius: 10px;
@@ -64,4 +64,5 @@ form {
 footer {
   filter: drop-shadow(0, 4, 4, black);
   text-align: center;
+  padding: 16px;
 }
