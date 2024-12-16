@@ -30,8 +30,8 @@ const items = [
     <nav class="navbar">
       <div class="container-fluid">
         <a class="navbar-brand" href="#" @click="setView('home')">
-          <img src="\src\assets\result.png" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-          GratheringGalaxy
+          <img src="\src\assets\icon.png" alt="Logo" width="50" height="50" class="d-inline-block">
+          <span class="fs-4">GratheringGalaxy</span>
         </a>
         <div v-if="currentView === 'home'">
           <button @click="setView('login')">Bejelentkezés</button>
@@ -77,7 +77,7 @@ button,
 button:hover {
   margin: 0px 10px;
 }
-img {
+.image-container img {
   width: 100px;
   border-radius: 50%;
 }
